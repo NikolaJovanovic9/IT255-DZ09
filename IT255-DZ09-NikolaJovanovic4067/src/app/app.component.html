@@ -1,0 +1,22 @@
+<div class="container" style="min-width: 100%;">
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">YT video id</th>
+        <th scope="col">Title - 50 char</th>
+        <th scope="col">Description - 50 char</th>
+        <th scope="col">Thumbnail</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let post of posts; index as i;">
+        <th>{{post.ytId}}</th>
+        <td>{{post.title}}</td>
+        <td>{{post.description}}</td>
+        <img [src]="post.thumbnail" class="card-img-top" style="width: 150px; height: 100px;">
+        <td>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
